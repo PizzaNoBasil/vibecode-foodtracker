@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node / Vite
+node_modules/
+dist-ssr/
+*.local
+.taste-skill/
+.DS_Store
+*.tsbuildinfo
+.claude/

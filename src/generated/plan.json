@@ -1,0 +1,4140 @@
+{
+ "version": 1,
+ "defaultCycleStart": "2026-10-19",
+ "weekdays": [
+  "Пн",
+  "Вт",
+  "Ср",
+  "Чт",
+  "Пт",
+  "Сб",
+  "Вс"
+ ],
+ "slotTitles": {
+  "breakfast": "Завтрак",
+  "snack": "Перекус",
+  "dinner": "Ужин"
+ },
+ "profiles": {
+  "first": {
+   "id": "first",
+   "defaultName": "Профиль 1",
+   "slots": [
+    "breakfast",
+    "snack",
+    "dinner"
+   ],
+   "target": {
+    "kcal": 2300,
+    "protein": 180,
+    "fat": 80,
+    "carbs": 215
+   },
+   "dayKcal": 2300,
+   "workKcal": 0
+  },
+  "second": {
+   "id": "second",
+   "defaultName": "Профиль 2",
+   "slots": [
+    "dinner"
+   ],
+   "target": {
+    "kcal": 850,
+    "protein": 0,
+    "fat": 0,
+    "carbs": 0
+   },
+   "dayKcal": 2100,
+   "workKcal": 1250
+  }
+ },
+ "protein": {
+  "scoops": 40,
+  "scoopGrams": 41,
+  "recipe": "S1",
+  "warnBelow": 6
+ },
+ "recipes": {
+  "B1": {
+   "id": "B1",
+   "code": "З1",
+   "slot": "breakfast",
+   "title": "Бутерброды с лососем",
+   "minutes": "3 мин",
+   "steps": [
+    "Намазать хлеб сыром, выложить лосось и огурец.",
+    "Скир смешать с ягодами."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 720,
+      "protein": 58,
+      "fat": 20,
+      "carbs": 72
+     },
+     "grams": 670,
+     "lines": [
+      {
+       "id": "rye_bread",
+       "name": "Хлеб ржаной",
+       "unit": "g",
+       "amount": 120,
+       "note": "3 ломтика"
+      },
+      {
+       "id": "salmon",
+       "name": "Лосось слабосолёный",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "cream_cheese",
+       "name": "Творожный сыр лёгкий",
+       "unit": "g",
+       "amount": 50,
+       "note": ""
+      },
+      {
+       "id": "cucumber",
+       "name": "Огурцы",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 200,
+       "note": "отдельно"
+      },
+      {
+       "id": "berries",
+       "name": "Ягоды замороженные",
+       "unit": "g",
+       "amount": 100,
+       "note": "к скиру"
+      }
+     ]
+    }
+   }
+  },
+  "B2": {
+   "id": "B2",
+   "code": "З2",
+   "slot": "breakfast",
+   "title": "Лаваш-омлет",
+   "minutes": "7 мин",
+   "steps": [
+    "Взбить яйца с солью и вылить на разогретую антипригарную сковороду.",
+    "Сразу накрыть лавашом, через минуту перевернуть.",
+    "Выложить ветчину, сыр и помидор, сложить пополам, подержать минуту под крышкой.",
+    "Банан отдельно."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 710,
+      "protein": 54,
+      "fat": 28,
+      "carbs": 63
+     },
+     "grams": 565,
+     "lines": [
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 3,
+       "note": ""
+      },
+      {
+       "id": "lavash",
+       "name": "Лаваш тонкий, листы",
+       "unit": "pcs",
+       "amount": 1,
+       "note": "50 г"
+      },
+      {
+       "id": "turkey_ham",
+       "name": "Ветчина из индейки",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "cheese",
+       "name": "Сыр",
+       "unit": "g",
+       "amount": 30,
+       "note": ""
+      },
+      {
+       "id": "tomato",
+       "name": "Помидоры",
+       "unit": "pcs",
+       "amount": 1,
+       "note": "100 г"
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 1,
+       "note": "отдельно"
+      }
+     ]
+    }
+   }
+  },
+  "B3": {
+   "id": "B3",
+   "code": "З3",
+   "slot": "breakfast",
+   "title": "Тосты с творогом и яйцами",
+   "minutes": "5 мин",
+   "steps": [
+    "Подсушить хлеб.",
+    "Творог смешать с зеленью, чесноком и солью, намазать.",
+    "Сверху яйца кружками и огурец."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 700,
+      "protein": 60,
+      "fat": 24,
+      "carbs": 59
+     },
+     "grams": 535,
+     "lines": [
+      {
+       "id": "wholegrain_bread",
+       "name": "Хлеб цельнозерновой",
+       "unit": "g",
+       "amount": 120,
+       "note": "3 ломтика"
+      },
+      {
+       "id": "cottage_cheese",
+       "name": "Творог 5%",
+       "unit": "g",
+       "amount": 200,
+       "note": ""
+      },
+      {
+       "id": "herbs",
+       "name": "Зелень",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 2,
+       "note": "сварены накануне"
+      },
+      {
+       "id": "cucumber",
+       "name": "Огурцы",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "B4": {
+   "id": "B4",
+   "code": "З4",
+   "slot": "breakfast",
+   "title": "Смузи",
+   "minutes": "3 мин, нужен блендер",
+   "steps": [
+    "Всё в блендер на 30 секунд."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 650,
+      "protein": 47,
+      "fat": 17,
+      "carbs": 84
+     },
+     "grams": 860,
+     "lines": [
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 250,
+       "note": ""
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 2,
+       "note": ""
+      },
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 350,
+       "note": ""
+      },
+      {
+       "id": "peanut_butter",
+       "name": "Арахисовая паста",
+       "unit": "g",
+       "amount": 20,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "B5": {
+   "id": "B5",
+   "code": "З5",
+   "slot": "breakfast",
+   "title": "Запеканка с бананом",
+   "minutes": "печётся накануне вечером на 2 дня",
+   "steps": [
+    "На 2 порции: размять 2 банана, смешать с 600 г творога, 2 яйцами и 60 г манки, дать постоять 10 минут.",
+    "Выложить в форму, печь при 180°C 35–40 минут.",
+    "Остудить, разделить на 2 части, хранить в холодильнике.",
+    "Утром разогреть, подать с ягодами и мёдом."
+   ],
+   "storage": "Хранить в холодильнике, утром разогреть.",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 720,
+      "protein": 63,
+      "fat": 22,
+      "carbs": 71
+     },
+     "grams": 615,
+     "lines": [
+      {
+       "id": "cottage_cheese",
+       "name": "Творог 5%",
+       "unit": "g",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "semolina",
+       "name": "Манка",
+       "unit": "g",
+       "amount": 30,
+       "note": ""
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "berries",
+       "name": "Ягоды замороженные",
+       "unit": "g",
+       "amount": 100,
+       "note": "при подаче"
+      },
+      {
+       "id": "honey",
+       "name": "Мёд",
+       "unit": "g",
+       "amount": 10,
+       "note": "при подаче"
+      }
+     ]
+    }
+   }
+  },
+  "S1": {
+   "id": "S1",
+   "code": "П1",
+   "slot": "snack",
+   "title": "Протеиновый коктейль",
+   "minutes": "",
+   "steps": [
+    "Протеин с молоком в шейкер.",
+    "Банан и пасту съесть отдельно или всё вместе в блендер."
+   ],
+   "storage": "",
+   "notes": [
+    "В дни тренировок пить после тренировки."
+   ],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 470,
+      "protein": 45,
+      "fat": 13,
+      "carbs": 47
+     },
+     "grams": 476,
+     "lines": [
+      {
+       "id": "protein",
+       "name": "Протеин Platinum Hydrowhey",
+       "unit": "g",
+       "amount": 41,
+       "note": "1 скуп, шоколад"
+      },
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "peanut_butter",
+       "name": "Арахисовая паста",
+       "unit": "g",
+       "amount": 15,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "S2": {
+   "id": "S2",
+   "code": "П2",
+   "slot": "snack",
+   "title": "Творог с ягодами",
+   "minutes": "",
+   "steps": [],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 505,
+      "protein": 46,
+      "fat": 13,
+      "carbs": 53
+     },
+     "grams": 530,
+     "lines": [
+      {
+       "id": "cottage_cheese",
+       "name": "Творог 5%",
+       "unit": "g",
+       "amount": 250,
+       "note": ""
+      },
+      {
+       "id": "berries",
+       "name": "Ягоды замороженные",
+       "unit": "g",
+       "amount": 150,
+       "note": ""
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "honey",
+       "name": "Мёд",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "S3": {
+   "id": "S3",
+   "code": "П3",
+   "slot": "snack",
+   "title": "Скир с яблоком",
+   "minutes": "",
+   "steps": [],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 440,
+      "protein": 36,
+      "fat": 14,
+      "carbs": 42
+     },
+     "grams": 480,
+     "lines": [
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "apple",
+       "name": "Яблоки",
+       "unit": "pcs",
+       "amount": 1,
+       "note": "150 г"
+      },
+      {
+       "id": "walnuts",
+       "name": "Грецкие орехи",
+       "unit": "g",
+       "amount": 20,
+       "note": ""
+      },
+      {
+       "id": "honey",
+       "name": "Мёд",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "S4": {
+   "id": "S4",
+   "code": "П4",
+   "slot": "snack",
+   "title": "Тунец с хлебцами",
+   "minutes": "",
+   "steps": [],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 450,
+      "protein": 42,
+      "fat": 8,
+      "carbs": 55
+     },
+     "grams": 435,
+     "lines": [
+      {
+       "id": "tuna",
+       "name": "Тунец в собственном соку, банка",
+       "unit": "pcs",
+       "amount": 1,
+       "note": "~120 г без жидкости"
+      },
+      {
+       "id": "crispbread",
+       "name": "Хлебцы",
+       "unit": "pcs",
+       "amount": 4,
+       "note": ""
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 1,
+       "note": "сварено накануне"
+      },
+      {
+       "id": "cucumber",
+       "name": "Огурцы",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D1": {
+   "id": "D1",
+   "code": "У1",
+   "slot": "dinner",
+   "title": "Egg fried rice с индейкой",
+   "minutes": "20 мин",
+   "steps": [
+    "Сварить рис и остудить.",
+    "Обжарить фарш на половине масла.",
+    "Сдвинуть к краю, на остатке масла пожарить яйца болтуньей.",
+    "Добавить овощи, затем рис и соевый соус, жарить на сильном огне 3–4 минуты."
+   ],
+   "storage": "Быстро охладить и убрать в холодильник, разогревать на сковороде.",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 1070,
+      "protein": 82,
+      "fat": 32,
+      "carbs": 100
+     },
+     "grams": 675,
+     "lines": [
+      {
+       "id": "turkey_mince",
+       "name": "Фарш индейки",
+       "unit": "g",
+       "amount": 225,
+       "note": ""
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 3,
+       "note": ""
+      },
+      {
+       "id": "veg_mix",
+       "name": "Смесь овощей (горошек, морковь, кукуруза)",
+       "unit": "g",
+       "amount": 150,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      },
+      {
+       "id": "soy_sauce",
+       "name": "Соевый соус",
+       "unit": "ml",
+       "amount": 25,
+       "note": ""
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 856,
+      "protein": 66,
+      "fat": 26,
+      "carbs": 80
+     },
+     "grams": 540,
+     "lines": [
+      {
+       "id": "turkey_mince",
+       "name": "Фарш индейки",
+       "unit": "g",
+       "amount": 180,
+       "note": ""
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 80,
+       "note": ""
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 2.4,
+       "note": ""
+      },
+      {
+       "id": "veg_mix",
+       "name": "Смесь овощей (горошек, морковь, кукуруза)",
+       "unit": "g",
+       "amount": 120,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "soy_sauce",
+       "name": "Соевый соус",
+       "unit": "ml",
+       "amount": 20,
+       "note": ""
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3852,
+      "protein": 295,
+      "fat": 115,
+      "carbs": 360
+     },
+     "grams": 2430,
+     "lines": [
+      {
+       "id": "turkey_mince",
+       "name": "Фарш индейки",
+       "unit": "g",
+       "amount": 810,
+       "note": ""
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 10.8,
+       "note": ""
+      },
+      {
+       "id": "veg_mix",
+       "name": "Смесь овощей (горошек, морковь, кукуруза)",
+       "unit": "g",
+       "amount": 540,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 36,
+       "note": ""
+      },
+      {
+       "id": "soy_sauce",
+       "name": "Соевый соус",
+       "unit": "ml",
+       "amount": 90,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D2": {
+   "id": "D2",
+   "code": "У2",
+   "slot": "dinner",
+   "title": "Болоньезе",
+   "minutes": "25 мин",
+   "steps": [
+    "Обжарить лук и чеснок, добавить фарш и жарить до румяности.",
+    "Влить томаты и тушить 15 минут.",
+    "Пасту отварить."
+   ],
+   "storage": "Соус на 2 дня, пасту во второй день варить свежую.",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 1010,
+      "protein": 78,
+      "fat": 29,
+      "carbs": 106
+     },
+     "grams": 775,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 250,
+       "note": ""
+      },
+      {
+       "id": "pasta",
+       "name": "Паста",
+       "unit": "g",
+       "amount": 120,
+       "note": ""
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 1,
+       "note": "75 г"
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      },
+      {
+       "id": "parmesan",
+       "name": "Пармезан",
+       "unit": "g",
+       "amount": 15,
+       "note": ""
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 808,
+      "protein": 62,
+      "fat": 23,
+      "carbs": 85
+     },
+     "grams": 620,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 200,
+       "note": ""
+      },
+      {
+       "id": "pasta",
+       "name": "Паста",
+       "unit": "g",
+       "amount": 96,
+       "note": ""
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 240,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.8,
+       "note": "75 г"
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 0.8,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "parmesan",
+       "name": "Пармезан",
+       "unit": "g",
+       "amount": 12,
+       "note": ""
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3636,
+      "protein": 281,
+      "fat": 104,
+      "carbs": 382
+     },
+     "grams": 2790,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 900,
+       "note": ""
+      },
+      {
+       "id": "pasta",
+       "name": "Паста",
+       "unit": "g",
+       "amount": 432,
+       "note": ""
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 1080,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 36,
+       "note": ""
+      },
+      {
+       "id": "parmesan",
+       "name": "Пармезан",
+       "unit": "g",
+       "amount": 54,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D3": {
+   "id": "D3",
+   "code": "У3",
+   "slot": "dinner",
+   "title": "Курица с картошкой на противне",
+   "minutes": "5 мин работы + 35 мин в духовке",
+   "steps": [
+    "Картофель дольками на противень с половиной масла, 15 минут при 200°C.",
+    "Добавить курицу кусками и овощи с остальным маслом, запекать ещё 20 минут.",
+    "Смешать соус: скир, чеснок, соль."
+   ],
+   "storage": "Авокадо резать в день подачи.",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 1060,
+      "protein": 93,
+      "fat": 30,
+      "carbs": 100
+     },
+     "grams": 1190,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 450,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 125,
+       "note": ""
+      },
+      {
+       "id": "zucchini",
+       "name": "Кабачок",
+       "unit": "g",
+       "amount": 125,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 15,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 100,
+       "note": "для соуса"
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 1,
+       "note": "для соуса"
+      },
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 70,
+       "note": "при подаче"
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 848,
+      "protein": 74,
+      "fat": 24,
+      "carbs": 80
+     },
+     "grams": 952,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 240,
+       "note": ""
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "zucchini",
+       "name": "Кабачок",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 12,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 80,
+       "note": "для соуса"
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 0.8,
+       "note": "для соуса"
+      },
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 56,
+       "note": "при подаче"
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3816,
+      "protein": 335,
+      "fat": 108,
+      "carbs": 360
+     },
+     "grams": 4284,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 1080,
+       "note": ""
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 1620,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 450,
+       "note": ""
+      },
+      {
+       "id": "zucchini",
+       "name": "Кабачок",
+       "unit": "g",
+       "amount": 450,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 54,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 252,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D4": {
+   "id": "D4",
+   "code": "У4",
+   "slot": "dinner",
+   "title": "Фахитас с индейкой",
+   "minutes": "20 мин",
+   "steps": [
+    "Обжарить индейку полосками, добавить перец, лук и специи.",
+    "Соус: скир, сок лайма, соль.",
+    "Тортильи прогреть в сухой сковороде, собрать."
+   ],
+   "storage": "Начинка на 2 дня, тортильи греть в день подачи.",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 1030,
+      "protein": 90,
+      "fat": 31,
+      "carbs": 90
+     },
+     "grams": 835,
+     "lines": [
+      {
+       "id": "turkey_fillet",
+       "name": "Филе индейки",
+       "unit": "g",
+       "amount": 250,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 200,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": "для фахитас"
+      },
+      {
+       "id": "tortilla",
+       "name": "Тортильи цельнозерновые",
+       "unit": "pcs",
+       "amount": 3,
+       "note": "по 40 г"
+      },
+      {
+       "id": "cheese",
+       "name": "Сыр",
+       "unit": "g",
+       "amount": 30,
+       "note": ""
+      },
+      {
+       "id": "salsa",
+       "name": "Сальса",
+       "unit": "g",
+       "amount": 50,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 100,
+       "note": "для соуса"
+      },
+      {
+       "id": "lime",
+       "name": "Лайм",
+       "unit": "pcs",
+       "amount": null,
+       "note": "сок, для соуса"
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 824,
+      "protein": 72,
+      "fat": 25,
+      "carbs": 72
+     },
+     "grams": 668,
+     "lines": [
+      {
+       "id": "turkey_fillet",
+       "name": "Филе индейки",
+       "unit": "g",
+       "amount": 200,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 160,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.8,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": "для фахитас"
+      },
+      {
+       "id": "tortilla",
+       "name": "Тортильи цельнозерновые",
+       "unit": "pcs",
+       "amount": 2.4,
+       "note": "по 40 г"
+      },
+      {
+       "id": "cheese",
+       "name": "Сыр",
+       "unit": "g",
+       "amount": 24,
+       "note": ""
+      },
+      {
+       "id": "salsa",
+       "name": "Сальса",
+       "unit": "g",
+       "amount": 40,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 80,
+       "note": "для соуса"
+      },
+      {
+       "id": "lime",
+       "name": "Лайм",
+       "unit": "pcs",
+       "amount": null,
+       "note": "сок, для соуса"
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3708,
+      "protein": 324,
+      "fat": 112,
+      "carbs": 324
+     },
+     "grams": 3006,
+     "lines": [
+      {
+       "id": "turkey_fillet",
+       "name": "Филе индейки",
+       "unit": "g",
+       "amount": 900,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 720,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 36,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "tortilla",
+       "name": "Тортильи цельнозерновые",
+       "unit": "pcs",
+       "amount": 10.8,
+       "note": ""
+      },
+      {
+       "id": "cheese",
+       "name": "Сыр",
+       "unit": "g",
+       "amount": 108,
+       "note": ""
+      },
+      {
+       "id": "salsa",
+       "name": "Сальса",
+       "unit": "g",
+       "amount": 180,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "lime",
+       "name": "Лайм",
+       "unit": "pcs",
+       "amount": null,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D5": {
+   "id": "D5",
+   "code": "У5",
+   "slot": "dinner",
+   "title": "Чили кон карне",
+   "minutes": "30 мин",
+   "steps": [
+    "Обжарить лук и перец, добавить фарш и специи.",
+    "Влить томаты, добавить фасоль, тушить 15 минут.",
+    "Рис отварить."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 1060,
+      "protein": 75,
+      "fat": 32,
+      "carbs": 112
+     },
+     "grams": 915,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 250,
+       "note": ""
+      },
+      {
+       "id": "red_beans",
+       "name": "Фасоль красная консервированная",
+       "unit": "g",
+       "amount": 150,
+       "note": "без жидкости"
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 200,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": "чили, кумин, паприка"
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 80,
+       "note": ""
+      },
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 50,
+       "note": "при подаче"
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 848,
+      "protein": 60,
+      "fat": 26,
+      "carbs": 90
+     },
+     "grams": 732,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 200,
+       "note": ""
+      },
+      {
+       "id": "red_beans",
+       "name": "Фасоль красная консервированная",
+       "unit": "g",
+       "amount": 120,
+       "note": "без жидкости"
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 160,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.8,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 80,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": "чили, кумин, паприка"
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 64,
+       "note": ""
+      },
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 40,
+       "note": "при подаче"
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3816,
+      "protein": 270,
+      "fat": 115,
+      "carbs": 403
+     },
+     "grams": 3294,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 900,
+       "note": ""
+      },
+      {
+       "id": "red_beans",
+       "name": "Фасоль красная консервированная",
+       "unit": "g",
+       "amount": 540,
+       "note": ""
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 720,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 36,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 288,
+       "note": ""
+      },
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 180,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D6": {
+   "id": "D6",
+   "code": "У6",
+   "slot": "dinner",
+   "title": "Гречка с курицей и грибами",
+   "minutes": "25 мин",
+   "steps": [
+    "Гречку отварить.",
+    "Курицу кусочками обжарить, добавить лук и грибы, жарить 10 минут.",
+    "В конце добавить сметану."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 1030,
+      "protein": 93,
+      "fat": 31,
+      "carbs": 84
+     },
+     "grams": 760,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "buckwheat",
+       "name": "Гречка",
+       "unit": "g",
+       "amount": 120,
+       "note": ""
+      },
+      {
+       "id": "mushrooms",
+       "name": "Шампиньоны",
+       "unit": "g",
+       "amount": 200,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 15,
+       "note": ""
+      },
+      {
+       "id": "sour_cream",
+       "name": "Сметана 15%",
+       "unit": "g",
+       "amount": 50,
+       "note": ""
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 824,
+      "protein": 74,
+      "fat": 25,
+      "carbs": 67
+     },
+     "grams": 608,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 240,
+       "note": ""
+      },
+      {
+       "id": "buckwheat",
+       "name": "Гречка",
+       "unit": "g",
+       "amount": 96,
+       "note": ""
+      },
+      {
+       "id": "mushrooms",
+       "name": "Шампиньоны",
+       "unit": "g",
+       "amount": 160,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.8,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 12,
+       "note": ""
+      },
+      {
+       "id": "sour_cream",
+       "name": "Сметана 15%",
+       "unit": "g",
+       "amount": 40,
+       "note": ""
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3708,
+      "protein": 335,
+      "fat": 112,
+      "carbs": 302
+     },
+     "grams": 2736,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 1080,
+       "note": ""
+      },
+      {
+       "id": "buckwheat",
+       "name": "Гречка",
+       "unit": "g",
+       "amount": 432,
+       "note": ""
+      },
+      {
+       "id": "mushrooms",
+       "name": "Шампиньоны",
+       "unit": "g",
+       "amount": 720,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 54,
+       "note": ""
+      },
+      {
+       "id": "sour_cream",
+       "name": "Сметана 15%",
+       "unit": "g",
+       "amount": 180,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D7": {
+   "id": "D7",
+   "code": "У7",
+   "slot": "dinner",
+   "title": "Бургеры с говяжьими котлетами",
+   "minutes": "25 мин",
+   "steps": [
+    "В первый день сформировать все котлеты, пожарить половину.",
+    "Остальные сырыми убрать в холодильник.",
+    "На второй день пожарить, по 3–4 минуты с каждой стороны.",
+    "Соус: скир, кетчуп, горчица."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 970,
+      "protein": 93,
+      "fat": 32,
+      "carbs": 77
+     },
+     "grams": 688,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 300,
+       "note": "2 котлеты по 150 г"
+      },
+      {
+       "id": "bun",
+       "name": "Булочки цельнозерновые",
+       "unit": "pcs",
+       "amount": 2,
+       "note": "по 70 г"
+      },
+      {
+       "id": "cheese_slice",
+       "name": "Сыр в ломтиках",
+       "unit": "pcs",
+       "amount": 2,
+       "note": "по 20 г"
+      },
+      {
+       "id": "lettuce",
+       "name": "Салат листовой",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "tomato",
+       "name": "Помидоры",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.5,
+       "note": ""
+      },
+      {
+       "id": "pickles",
+       "name": "Огурцы маринованные",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 50,
+       "note": "для соуса"
+      },
+      {
+       "id": "ketchup",
+       "name": "Кетчуп",
+       "unit": "g",
+       "amount": 15,
+       "note": "для соуса"
+      },
+      {
+       "id": "mustard",
+       "name": "Горчица",
+       "unit": "g",
+       "amount": 5,
+       "note": "1 ч. л., для соуса"
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 870,
+      "protein": 76,
+      "fat": 28,
+      "carbs": 77
+     },
+     "grams": 608,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 220,
+       "note": "2 котлеты по 110 г"
+      },
+      {
+       "id": "bun",
+       "name": "Булочки цельнозерновые",
+       "unit": "pcs",
+       "amount": 2,
+       "note": "по 70 г"
+      },
+      {
+       "id": "cheese_slice",
+       "name": "Сыр в ломтиках",
+       "unit": "pcs",
+       "amount": 2,
+       "note": "по 20 г"
+      },
+      {
+       "id": "lettuce",
+       "name": "Салат листовой",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "tomato",
+       "name": "Помидоры",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.5,
+       "note": ""
+      },
+      {
+       "id": "pickles",
+       "name": "Огурцы маринованные",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 50,
+       "note": "для соуса"
+      },
+      {
+       "id": "ketchup",
+       "name": "Кетчуп",
+       "unit": "g",
+       "amount": 15,
+       "note": "для соуса"
+      },
+      {
+       "id": "mustard",
+       "name": "Горчица",
+       "unit": "g",
+       "amount": 5,
+       "note": "1 ч. л., для соуса"
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3680,
+      "protein": 338,
+      "fat": 120,
+      "carbs": 308
+     },
+     "grams": 2590,
+     "lines": [
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 1040,
+       "note": "8 котлет: 4 по 150 г и 4 по 110 г"
+      },
+      {
+       "id": "bun",
+       "name": "Булочки цельнозерновые",
+       "unit": "pcs",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "cheese_slice",
+       "name": "Сыр в ломтиках",
+       "unit": "pcs",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "lettuce",
+       "name": "Салат листовой",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "tomato",
+       "name": "Помидоры",
+       "unit": "pcs",
+       "amount": 4,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 2,
+       "note": ""
+      },
+      {
+       "id": "pickles",
+       "name": "Огурцы маринованные",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 200,
+       "note": "для соуса"
+      },
+      {
+       "id": "ketchup",
+       "name": "Кетчуп",
+       "unit": "g",
+       "amount": 60,
+       "note": "для соуса"
+      },
+      {
+       "id": "mustard",
+       "name": "Горчица",
+       "unit": "g",
+       "amount": 20,
+       "note": "для соуса"
+      }
+     ]
+    }
+   }
+  },
+  "D8": {
+   "id": "D8",
+   "code": "У8",
+   "slot": "dinner",
+   "title": "Гуляш с пюре",
+   "minutes": "15 мин работы + 1,5 ч тушения",
+   "steps": [
+    "Говядину кубиками обжарить, добавить лук и морковь.",
+    "Добавить муку, паприку и томатную пасту.",
+    "Залить водой и тушить 1,5 часа под крышкой.",
+    "Картофель отварить и размять с молоком и маслом."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 970,
+      "protein": 77,
+      "fat": 30,
+      "carbs": 94
+     },
+     "grams": 1000,
+     "lines": [
+      {
+       "id": "beef_shoulder",
+       "name": "Говядина постная (лопатка)",
+       "unit": "g",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "carrot",
+       "name": "Морковь",
+       "unit": "g",
+       "amount": 80,
+       "note": "1 шт."
+      },
+      {
+       "id": "tomato_paste",
+       "name": "Томатная паста",
+       "unit": "g",
+       "amount": 20,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": "паприка, 1 ч. л."
+      },
+      {
+       "id": "flour",
+       "name": "Мука",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 5,
+       "note": ""
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 400,
+       "note": "для пюре"
+      },
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 100,
+       "note": "для пюре"
+      },
+      {
+       "id": "butter",
+       "name": "Масло сливочное",
+       "unit": "g",
+       "amount": 10,
+       "note": "для пюре"
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 776,
+      "protein": 62,
+      "fat": 24,
+      "carbs": 75
+     },
+     "grams": 800,
+     "lines": [
+      {
+       "id": "beef_shoulder",
+       "name": "Говядина постная (лопатка)",
+       "unit": "g",
+       "amount": 240,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.8,
+       "note": ""
+      },
+      {
+       "id": "carrot",
+       "name": "Морковь",
+       "unit": "g",
+       "amount": 64,
+       "note": "1 шт."
+      },
+      {
+       "id": "tomato_paste",
+       "name": "Томатная паста",
+       "unit": "g",
+       "amount": 16,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": "паприка, 1 ч. л."
+      },
+      {
+       "id": "flour",
+       "name": "Мука",
+       "unit": "g",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 4,
+       "note": ""
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 320,
+       "note": "для пюре"
+      },
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 80,
+       "note": "для пюре"
+      },
+      {
+       "id": "butter",
+       "name": "Масло сливочное",
+       "unit": "g",
+       "amount": 8,
+       "note": "для пюре"
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3492,
+      "protein": 277,
+      "fat": 108,
+      "carbs": 338
+     },
+     "grams": 3600,
+     "lines": [
+      {
+       "id": "beef_shoulder",
+       "name": "Говядина постная (лопатка)",
+       "unit": "g",
+       "amount": 1080,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "carrot",
+       "name": "Морковь",
+       "unit": "g",
+       "amount": 288,
+       "note": ""
+      },
+      {
+       "id": "tomato_paste",
+       "name": "Томатная паста",
+       "unit": "g",
+       "amount": 72,
+       "note": ""
+      },
+      {
+       "id": "spices",
+       "name": "Специи",
+       "unit": "g",
+       "amount": null,
+       "note": ""
+      },
+      {
+       "id": "flour",
+       "name": "Мука",
+       "unit": "g",
+       "amount": 36,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 18,
+       "note": ""
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 1440,
+       "note": ""
+      },
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "butter",
+       "name": "Масло сливочное",
+       "unit": "g",
+       "amount": 36,
+       "note": ""
+      }
+     ]
+    }
+   }
+  },
+  "D9": {
+   "id": "D9",
+   "code": "У9",
+   "slot": "dinner",
+   "title": "Курица карри",
+   "minutes": "25 мин",
+   "steps": [
+    "Обжарить лук и пасту карри, добавить курицу кусочками.",
+    "Влить кокосовое молоко и томаты, тушить 10 минут, в конце горошек.",
+    "Рис отварить."
+   ],
+   "storage": "",
+   "notes": [],
+   "portions": {
+    "first": {
+     "macros": {
+      "kcal": 1015,
+      "protein": 84,
+      "fat": 23,
+      "carbs": 108
+     },
+     "grams": 805,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 300,
+       "note": ""
+      },
+      {
+       "id": "coconut_milk",
+       "name": "Кокосовое молоко лёгкое",
+       "unit": "ml",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 1,
+       "note": ""
+      },
+      {
+       "id": "peas",
+       "name": "Горошек замороженный",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 10,
+       "note": ""
+      },
+      {
+       "id": "curry_paste",
+       "name": "Паста карри",
+       "unit": "g",
+       "amount": 20,
+       "note": ""
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 100,
+       "note": ""
+      }
+     ]
+    },
+    "second": {
+     "macros": {
+      "kcal": 812,
+      "protein": 67,
+      "fat": 18,
+      "carbs": 86
+     },
+     "grams": 644,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 240,
+       "note": ""
+      },
+      {
+       "id": "coconut_milk",
+       "name": "Кокосовое молоко лёгкое",
+       "unit": "ml",
+       "amount": 80,
+       "note": ""
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 80,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 0.8,
+       "note": ""
+      },
+      {
+       "id": "peas",
+       "name": "Горошек замороженный",
+       "unit": "g",
+       "amount": 80,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 8,
+       "note": ""
+      },
+      {
+       "id": "curry_paste",
+       "name": "Паста карри",
+       "unit": "g",
+       "amount": 16,
+       "note": ""
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 80,
+       "note": ""
+      }
+     ]
+    },
+    "batch": {
+     "macros": {
+      "kcal": 3654,
+      "protein": 302,
+      "fat": 83,
+      "carbs": 389
+     },
+     "grams": 2898,
+     "lines": [
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 1080,
+       "note": ""
+      },
+      {
+       "id": "coconut_milk",
+       "name": "Кокосовое молоко лёгкое",
+       "unit": "ml",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 3.6,
+       "note": ""
+      },
+      {
+       "id": "peas",
+       "name": "Горошек замороженный",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      },
+      {
+       "id": "oil",
+       "name": "Масло растительное",
+       "unit": "g",
+       "amount": 36,
+       "note": ""
+      },
+      {
+       "id": "curry_paste",
+       "name": "Паста карри",
+       "unit": "g",
+       "amount": 72,
+       "note": ""
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 360,
+       "note": ""
+      }
+     ]
+    }
+   }
+  }
+ },
+ "cycle": [
+  [
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B1",
+     "snack": "S1",
+     "dinner": "D1"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2260,
+      "protein": 185,
+      "fat": 65,
+      "carbs": 219
+     },
+     "second": {
+      "kcal": 856,
+      "protein": 66,
+      "fat": 26,
+      "carbs": 80
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Egg fried rice с индейкой на 2 дня, 20 мин",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B4",
+     "snack": "S2",
+     "dinner": "D1"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2225,
+      "protein": 175,
+      "fat": 62,
+      "carbs": 237
+     },
+     "second": {
+      "kcal": 856,
+      "protein": 66,
+      "fat": 26,
+      "carbs": 80
+     }
+    },
+    "reminders": []
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B2",
+     "snack": "S1",
+     "dinner": "D2"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2190,
+      "protein": 177,
+      "fat": 70,
+      "carbs": 216
+     },
+     "second": {
+      "kcal": 808,
+      "protein": 62,
+      "fat": 23,
+      "carbs": 85
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Болоньезе на 2 дня, 25 мин",
+      "link": ""
+     },
+     {
+      "text": "Свари 2 яйца",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B3",
+     "snack": "S3",
+     "dinner": "D2"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2150,
+      "protein": 174,
+      "fat": 67,
+      "carbs": 207
+     },
+     "second": {
+      "kcal": 808,
+      "protein": 62,
+      "fat": 23,
+      "carbs": 85
+     }
+    },
+    "reminders": [
+     {
+      "text": "Свари свежую пасту к болоньезе",
+      "link": ""
+     },
+     {
+      "text": "Испечь запеканку на Пт и Сб",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B5",
+     "snack": "S1",
+     "dinner": "D3"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2250,
+      "protein": 201,
+      "fat": 65,
+      "carbs": 218
+     },
+     "second": {
+      "kcal": 848,
+      "protein": 74,
+      "fat": 24,
+      "carbs": 80
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Курица с картошкой на противне на 2 дня, 5 мин работы + 35 мин в духовке",
+      "link": ""
+     },
+     {
+      "text": "Свари 1 яйцо",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B5",
+     "snack": "S4",
+     "dinner": "D3"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2230,
+      "protein": 198,
+      "fat": 60,
+      "carbs": 226
+     },
+     "second": {
+      "kcal": 848,
+      "protein": 74,
+      "fat": 24,
+      "carbs": 80
+     }
+    },
+    "reminders": [
+     {
+      "text": "Закупка на следующую неделю",
+      "link": "/shopping"
+     }
+    ]
+   },
+   {
+    "cheat": true,
+    "meals": {
+     "breakfast": null,
+     "snack": null,
+     "dinner": null
+    },
+    "dinnerMode": null,
+    "totals": {
+     "first": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0
+     },
+     "second": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0
+     }
+    },
+    "reminders": [
+     {
+      "text": "Свари 2 яйца",
+      "link": ""
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B3",
+     "snack": "S1",
+     "dinner": "D4"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2200,
+      "protein": 195,
+      "fat": 68,
+      "carbs": 196
+     },
+     "second": {
+      "kcal": 824,
+      "protein": 72,
+      "fat": 25,
+      "carbs": 72
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Фахитас с индейкой на 2 дня, 20 мин",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B2",
+     "snack": "S3",
+     "dinner": "D4"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2180,
+      "protein": 180,
+      "fat": 73,
+      "carbs": 195
+     },
+     "second": {
+      "kcal": 824,
+      "protein": 72,
+      "fat": 25,
+      "carbs": 72
+     }
+    },
+    "reminders": []
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B1",
+     "snack": "S1",
+     "dinner": "D5"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2250,
+      "protein": 178,
+      "fat": 65,
+      "carbs": 231
+     },
+     "second": {
+      "kcal": 848,
+      "protein": 60,
+      "fat": 26,
+      "carbs": 90
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Чили кон карне на 2 дня, 30 мин",
+      "link": ""
+     },
+     {
+      "text": "Свари 1 яйцо",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B4",
+     "snack": "S4",
+     "dinner": "D5"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2160,
+      "protein": 164,
+      "fat": 57,
+      "carbs": 251
+     },
+     "second": {
+      "kcal": 848,
+      "protein": 60,
+      "fat": 26,
+      "carbs": 90
+     }
+    },
+    "reminders": [
+     {
+      "text": "Испечь запеканку на Пт и Сб",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B5",
+     "snack": "S1",
+     "dinner": "D6"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2220,
+      "protein": 201,
+      "fat": 66,
+      "carbs": 202
+     },
+     "second": {
+      "kcal": 824,
+      "protein": 74,
+      "fat": 25,
+      "carbs": 67
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Гречка с курицей и грибами на 2 дня, 25 мин",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B5",
+     "snack": "S2",
+     "dinner": "D6"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2255,
+      "protein": 202,
+      "fat": 66,
+      "carbs": 208
+     },
+     "second": {
+      "kcal": 824,
+      "protein": 74,
+      "fat": 25,
+      "carbs": 67
+     }
+    },
+    "reminders": [
+     {
+      "text": "Закупка на следующую неделю",
+      "link": "/shopping"
+     }
+    ]
+   },
+   {
+    "cheat": true,
+    "meals": {
+     "breakfast": null,
+     "snack": null,
+     "dinner": null
+    },
+    "dinnerMode": null,
+    "totals": {
+     "first": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0
+     },
+     "second": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0
+     }
+    },
+    "reminders": []
+   }
+  ],
+  [
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B2",
+     "snack": "S1",
+     "dinner": "D7"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2150,
+      "protein": 192,
+      "fat": 73,
+      "carbs": 187
+     },
+     "second": {
+      "kcal": 870,
+      "protein": 76,
+      "fat": 28,
+      "carbs": 77
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Бургеры с говяжьими котлетами на 2 дня, 25 мин",
+      "link": ""
+     },
+     {
+      "text": "Свари 1 яйцо",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B1",
+     "snack": "S4",
+     "dinner": "D7"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2140,
+      "protein": 193,
+      "fat": 60,
+      "carbs": 204
+     },
+     "second": {
+      "kcal": 870,
+      "protein": 76,
+      "fat": 28,
+      "carbs": 77
+     }
+    },
+    "reminders": [
+     {
+      "text": "Пожарь вторую половину котлет",
+      "link": ""
+     },
+     {
+      "text": "Свари 2 яйца",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B3",
+     "snack": "S1",
+     "dinner": "D8"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2140,
+      "protein": 182,
+      "fat": 67,
+      "carbs": 200
+     },
+     "second": {
+      "kcal": 776,
+      "protein": 62,
+      "fat": 24,
+      "carbs": 75
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Гуляш с пюре на 2 дня, 15 мин работы + 1,5 ч тушения",
+      "link": ""
+     },
+     {
+      "text": "Гуляш тушится 1,5 часа, начни сразу",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B4",
+     "snack": "S2",
+     "dinner": "D8"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2125,
+      "protein": 170,
+      "fat": 60,
+      "carbs": 231
+     },
+     "second": {
+      "kcal": 776,
+      "protein": 62,
+      "fat": 24,
+      "carbs": 75
+     }
+    },
+    "reminders": [
+     {
+      "text": "Испечь запеканку на Пт и Сб",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B5",
+     "snack": "S1",
+     "dinner": "D9"
+    },
+    "dinnerMode": "cook",
+    "totals": {
+     "first": {
+      "kcal": 2205,
+      "protein": 192,
+      "fat": 58,
+      "carbs": 226
+     },
+     "second": {
+      "kcal": 812,
+      "protein": 67,
+      "fat": 18,
+      "carbs": 86
+     }
+    },
+    "reminders": [
+     {
+      "text": "Готовим: Курица карри на 2 дня, 25 мин",
+      "link": ""
+     }
+    ]
+   },
+   {
+    "cheat": false,
+    "meals": {
+     "breakfast": "B5",
+     "snack": "S3",
+     "dinner": "D9"
+    },
+    "dinnerMode": "leftover",
+    "totals": {
+     "first": {
+      "kcal": 2175,
+      "protein": 183,
+      "fat": 59,
+      "carbs": 221
+     },
+     "second": {
+      "kcal": 812,
+      "protein": 67,
+      "fat": 18,
+      "carbs": 86
+     }
+    },
+    "reminders": [
+     {
+      "text": "Закупка на следующую неделю",
+      "link": "/shopping"
+     }
+    ]
+   },
+   {
+    "cheat": true,
+    "meals": {
+     "breakfast": null,
+     "snack": null,
+     "dinner": null
+    },
+    "dinnerMode": null,
+    "totals": {
+     "first": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0
+     },
+     "second": {
+      "kcal": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0
+     }
+    },
+    "reminders": []
+   }
+  ]
+ ],
+ "shopping": [
+  {
+   "groups": [
+    {
+     "id": "meat",
+     "title": "Мясо и рыба",
+     "items": [
+      {
+       "id": "turkey_ham",
+       "name": "Ветчина из индейки",
+       "unit": "g",
+       "amount": 100
+      },
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 900
+      },
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 1080
+      },
+      {
+       "id": "salmon",
+       "name": "Лосось слабосолёный",
+       "unit": "g",
+       "amount": 100
+      },
+      {
+       "id": "tuna",
+       "name": "Тунец в собственном соку, банка",
+       "unit": "pcs",
+       "amount": 1
+      },
+      {
+       "id": "turkey_mince",
+       "name": "Фарш индейки",
+       "unit": "g",
+       "amount": 810
+      }
+     ]
+    },
+    {
+     "id": "dairy",
+     "title": "Молочное и яйца",
+     "items": [
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 1250
+      },
+      {
+       "id": "parmesan",
+       "name": "Пармезан",
+       "unit": "g",
+       "amount": 54
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 1110
+      },
+      {
+       "id": "cheese",
+       "name": "Сыр",
+       "unit": "g",
+       "amount": 30
+      },
+      {
+       "id": "cottage_cheese",
+       "name": "Творог 5%",
+       "unit": "g",
+       "amount": 1050
+      },
+      {
+       "id": "cream_cheese",
+       "name": "Творожный сыр лёгкий",
+       "unit": "g",
+       "amount": 50
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 19
+      }
+     ]
+    },
+    {
+     "id": "produce",
+     "title": "Овощи и фрукты",
+     "items": [
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 252
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 10
+      },
+      {
+       "id": "herbs",
+       "name": "Зелень",
+       "unit": "g",
+       "amount": null
+      },
+      {
+       "id": "zucchini",
+       "name": "Кабачок",
+       "unit": "g",
+       "amount": 450
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 1620
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 4
+      },
+      {
+       "id": "cucumber",
+       "name": "Огурцы",
+       "unit": "g",
+       "amount": 300
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 450
+      },
+      {
+       "id": "tomato",
+       "name": "Помидоры",
+       "unit": "pcs",
+       "amount": 1
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 9
+      },
+      {
+       "id": "apple",
+       "name": "Яблоки",
+       "unit": "pcs",
+       "amount": 1
+      }
+     ]
+    },
+    {
+     "id": "bread",
+     "title": "Хлеб",
+     "items": [
+      {
+       "id": "lavash",
+       "name": "Лаваш тонкий, листы",
+       "unit": "pcs",
+       "amount": 1
+      },
+      {
+       "id": "rye_bread",
+       "name": "Хлеб ржаной",
+       "unit": "g",
+       "amount": 120
+      },
+      {
+       "id": "wholegrain_bread",
+       "name": "Хлеб цельнозерновой",
+       "unit": "g",
+       "amount": 120
+      },
+      {
+       "id": "crispbread",
+       "name": "Хлебцы",
+       "unit": "pcs",
+       "amount": 4
+      }
+     ]
+    },
+    {
+     "id": "grocery",
+     "title": "Бакалея",
+     "items": [
+      {
+       "id": "walnuts",
+       "name": "Грецкие орехи",
+       "unit": "g",
+       "amount": 20
+      },
+      {
+       "id": "pasta",
+       "name": "Паста",
+       "unit": "g",
+       "amount": 432
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 360
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 1080
+      }
+     ]
+    },
+    {
+     "id": "frozen",
+     "title": "Заморозка",
+     "items": [
+      {
+       "id": "veg_mix",
+       "name": "Смесь овощей (горошек, морковь, кукуруза)",
+       "unit": "g",
+       "amount": 540
+      },
+      {
+       "id": "berries",
+       "name": "Ягоды замороженные",
+       "unit": "g",
+       "amount": 450
+      }
+     ]
+    }
+   ],
+   "pantry": [
+    {
+     "id": "peanut_butter",
+     "name": "Арахисовая паста",
+     "unit": "g",
+     "amount": 65
+    },
+    {
+     "id": "semolina",
+     "name": "Манка",
+     "unit": "g",
+     "amount": 60
+    },
+    {
+     "id": "oil",
+     "name": "Масло растительное",
+     "unit": "g",
+     "amount": 126
+    },
+    {
+     "id": "honey",
+     "name": "Мёд",
+     "unit": "g",
+     "amount": 40
+    },
+    {
+     "id": "soy_sauce",
+     "name": "Соевый соус",
+     "unit": "ml",
+     "amount": 90
+    },
+    {
+     "id": "spices",
+     "name": "Специи",
+     "unit": "g",
+     "amount": null
+    }
+   ]
+  },
+  {
+   "groups": [
+    {
+     "id": "meat",
+     "title": "Мясо и рыба",
+     "items": [
+      {
+       "id": "turkey_ham",
+       "name": "Ветчина из индейки",
+       "unit": "g",
+       "amount": 100
+      },
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 900
+      },
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 1080
+      },
+      {
+       "id": "salmon",
+       "name": "Лосось слабосолёный",
+       "unit": "g",
+       "amount": 100
+      },
+      {
+       "id": "tuna",
+       "name": "Тунец в собственном соку, банка",
+       "unit": "pcs",
+       "amount": 1
+      },
+      {
+       "id": "turkey_fillet",
+       "name": "Филе индейки",
+       "unit": "g",
+       "amount": 900
+      }
+     ]
+    },
+    {
+     "id": "dairy",
+     "title": "Молочное и яйца",
+     "items": [
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 1250
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 1110
+      },
+      {
+       "id": "sour_cream",
+       "name": "Сметана 15%",
+       "unit": "g",
+       "amount": 180
+      },
+      {
+       "id": "cheese",
+       "name": "Сыр",
+       "unit": "g",
+       "amount": 138
+      },
+      {
+       "id": "cottage_cheese",
+       "name": "Творог 5%",
+       "unit": "g",
+       "amount": 1050
+      },
+      {
+       "id": "cream_cheese",
+       "name": "Творожный сыр лёгкий",
+       "unit": "g",
+       "amount": 50
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 8
+      }
+     ]
+    },
+    {
+     "id": "produce",
+     "title": "Овощи и фрукты",
+     "items": [
+      {
+       "id": "avocado",
+       "name": "Авокадо",
+       "unit": "g",
+       "amount": 180
+      },
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 10
+      },
+      {
+       "id": "herbs",
+       "name": "Зелень",
+       "unit": "g",
+       "amount": null
+      },
+      {
+       "id": "lime",
+       "name": "Лайм",
+       "unit": "pcs",
+       "amount": null
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 11
+      },
+      {
+       "id": "cucumber",
+       "name": "Огурцы",
+       "unit": "g",
+       "amount": 300
+      },
+      {
+       "id": "bell_pepper",
+       "name": "Перец болгарский",
+       "unit": "g",
+       "amount": 1080
+      },
+      {
+       "id": "tomato",
+       "name": "Помидоры",
+       "unit": "pcs",
+       "amount": 1
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 1
+      },
+      {
+       "id": "mushrooms",
+       "name": "Шампиньоны",
+       "unit": "g",
+       "amount": 720
+      },
+      {
+       "id": "apple",
+       "name": "Яблоки",
+       "unit": "pcs",
+       "amount": 1
+      }
+     ]
+    },
+    {
+     "id": "bread",
+     "title": "Хлеб",
+     "items": [
+      {
+       "id": "lavash",
+       "name": "Лаваш тонкий, листы",
+       "unit": "pcs",
+       "amount": 1
+      },
+      {
+       "id": "tortilla",
+       "name": "Тортильи цельнозерновые",
+       "unit": "pcs",
+       "amount": 11
+      },
+      {
+       "id": "rye_bread",
+       "name": "Хлеб ржаной",
+       "unit": "g",
+       "amount": 120
+      },
+      {
+       "id": "wholegrain_bread",
+       "name": "Хлеб цельнозерновой",
+       "unit": "g",
+       "amount": 120
+      },
+      {
+       "id": "crispbread",
+       "name": "Хлебцы",
+       "unit": "pcs",
+       "amount": 4
+      }
+     ]
+    },
+    {
+     "id": "grocery",
+     "title": "Бакалея",
+     "items": [
+      {
+       "id": "walnuts",
+       "name": "Грецкие орехи",
+       "unit": "g",
+       "amount": 20
+      },
+      {
+       "id": "buckwheat",
+       "name": "Гречка",
+       "unit": "g",
+       "amount": 432
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 288
+      },
+      {
+       "id": "salsa",
+       "name": "Сальса",
+       "unit": "g",
+       "amount": 180
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 720
+      },
+      {
+       "id": "red_beans",
+       "name": "Фасоль красная консервированная",
+       "unit": "g",
+       "amount": 540
+      }
+     ]
+    },
+    {
+     "id": "frozen",
+     "title": "Заморозка",
+     "items": [
+      {
+       "id": "berries",
+       "name": "Ягоды замороженные",
+       "unit": "g",
+       "amount": 450
+      }
+     ]
+    }
+   ],
+   "pantry": [
+    {
+     "id": "peanut_butter",
+     "name": "Арахисовая паста",
+     "unit": "g",
+     "amount": 65
+    },
+    {
+     "id": "semolina",
+     "name": "Манка",
+     "unit": "g",
+     "amount": 60
+    },
+    {
+     "id": "oil",
+     "name": "Масло растительное",
+     "unit": "g",
+     "amount": 126
+    },
+    {
+     "id": "honey",
+     "name": "Мёд",
+     "unit": "g",
+     "amount": 40
+    },
+    {
+     "id": "spices",
+     "name": "Специи",
+     "unit": "g",
+     "amount": null
+    }
+   ]
+  },
+  {
+   "groups": [
+    {
+     "id": "meat",
+     "title": "Мясо и рыба",
+     "items": [
+      {
+       "id": "turkey_ham",
+       "name": "Ветчина из индейки",
+       "unit": "g",
+       "amount": 100
+      },
+      {
+       "id": "beef_shoulder",
+       "name": "Говядина постная (лопатка)",
+       "unit": "g",
+       "amount": 1080
+      },
+      {
+       "id": "beef_mince",
+       "name": "Говяжий фарш 5%",
+       "unit": "g",
+       "amount": 1040
+      },
+      {
+       "id": "chicken_breast",
+       "name": "Куриная грудка",
+       "unit": "g",
+       "amount": 1080
+      },
+      {
+       "id": "salmon",
+       "name": "Лосось слабосолёный",
+       "unit": "g",
+       "amount": 100
+      },
+      {
+       "id": "tuna",
+       "name": "Тунец в собственном соку, банка",
+       "unit": "pcs",
+       "amount": 1
+      }
+     ]
+    },
+    {
+     "id": "dairy",
+     "title": "Молочное и яйца",
+     "items": [
+      {
+       "id": "milk",
+       "name": "Молоко 1,5%",
+       "unit": "ml",
+       "amount": 1610
+      },
+      {
+       "id": "skyr",
+       "name": "Скир",
+       "unit": "g",
+       "amount": 950
+      },
+      {
+       "id": "cheese",
+       "name": "Сыр",
+       "unit": "g",
+       "amount": 30
+      },
+      {
+       "id": "cheese_slice",
+       "name": "Сыр в ломтиках",
+       "unit": "pcs",
+       "amount": 8
+      },
+      {
+       "id": "cottage_cheese",
+       "name": "Творог 5%",
+       "unit": "g",
+       "amount": 1050
+      },
+      {
+       "id": "cream_cheese",
+       "name": "Творожный сыр лёгкий",
+       "unit": "g",
+       "amount": 50
+      },
+      {
+       "id": "egg",
+       "name": "Яйца",
+       "unit": "pcs",
+       "amount": 8
+      }
+     ]
+    },
+    {
+     "id": "produce",
+     "title": "Овощи и фрукты",
+     "items": [
+      {
+       "id": "banana",
+       "name": "Бананы",
+       "unit": "pcs",
+       "amount": 10
+      },
+      {
+       "id": "herbs",
+       "name": "Зелень",
+       "unit": "g",
+       "amount": null
+      },
+      {
+       "id": "potato",
+       "name": "Картофель",
+       "unit": "g",
+       "amount": 1440
+      },
+      {
+       "id": "onion",
+       "name": "Лук репчатый",
+       "unit": "pcs",
+       "amount": 10
+      },
+      {
+       "id": "carrot",
+       "name": "Морковь",
+       "unit": "g",
+       "amount": 288
+      },
+      {
+       "id": "cucumber",
+       "name": "Огурцы",
+       "unit": "g",
+       "amount": 300
+      },
+      {
+       "id": "tomato",
+       "name": "Помидоры",
+       "unit": "pcs",
+       "amount": 5
+      },
+      {
+       "id": "lettuce",
+       "name": "Салат листовой",
+       "unit": "g",
+       "amount": null
+      },
+      {
+       "id": "garlic",
+       "name": "Чеснок",
+       "unit": "clove",
+       "amount": 1
+      },
+      {
+       "id": "apple",
+       "name": "Яблоки",
+       "unit": "pcs",
+       "amount": 1
+      }
+     ]
+    },
+    {
+     "id": "bread",
+     "title": "Хлеб",
+     "items": [
+      {
+       "id": "bun",
+       "name": "Булочки цельнозерновые",
+       "unit": "pcs",
+       "amount": 8
+      },
+      {
+       "id": "lavash",
+       "name": "Лаваш тонкий, листы",
+       "unit": "pcs",
+       "amount": 1
+      },
+      {
+       "id": "rye_bread",
+       "name": "Хлеб ржаной",
+       "unit": "g",
+       "amount": 120
+      },
+      {
+       "id": "wholegrain_bread",
+       "name": "Хлеб цельнозерновой",
+       "unit": "g",
+       "amount": 120
+      },
+      {
+       "id": "crispbread",
+       "name": "Хлебцы",
+       "unit": "pcs",
+       "amount": 4
+      }
+     ]
+    },
+    {
+     "id": "grocery",
+     "title": "Бакалея",
+     "items": [
+      {
+       "id": "walnuts",
+       "name": "Грецкие орехи",
+       "unit": "g",
+       "amount": 20
+      },
+      {
+       "id": "coconut_milk",
+       "name": "Кокосовое молоко лёгкое",
+       "unit": "ml",
+       "amount": 360
+      },
+      {
+       "id": "pickles",
+       "name": "Огурцы маринованные",
+       "unit": "g",
+       "amount": null
+      },
+      {
+       "id": "rice",
+       "name": "Рис",
+       "unit": "g",
+       "amount": 360
+      },
+      {
+       "id": "canned_tomatoes",
+       "name": "Томаты в собственном соку",
+       "unit": "g",
+       "amount": 360
+      }
+     ]
+    },
+    {
+     "id": "frozen",
+     "title": "Заморозка",
+     "items": [
+      {
+       "id": "peas",
+       "name": "Горошек замороженный",
+       "unit": "g",
+       "amount": 360
+      },
+      {
+       "id": "berries",
+       "name": "Ягоды замороженные",
+       "unit": "g",
+       "amount": 450
+      }
+     ]
+    }
+   ],
+   "pantry": [
+    {
+     "id": "peanut_butter",
+     "name": "Арахисовая паста",
+     "unit": "g",
+     "amount": 65
+    },
+    {
+     "id": "mustard",
+     "name": "Горчица",
+     "unit": "g",
+     "amount": 20
+    },
+    {
+     "id": "ketchup",
+     "name": "Кетчуп",
+     "unit": "g",
+     "amount": 60
+    },
+    {
+     "id": "semolina",
+     "name": "Манка",
+     "unit": "g",
+     "amount": 60
+    },
+    {
+     "id": "oil",
+     "name": "Масло растительное",
+     "unit": "g",
+     "amount": 54
+    },
+    {
+     "id": "butter",
+     "name": "Масло сливочное",
+     "unit": "g",
+     "amount": 36
+    },
+    {
+     "id": "flour",
+     "name": "Мука",
+     "unit": "g",
+     "amount": 36
+    },
+    {
+     "id": "honey",
+     "name": "Мёд",
+     "unit": "g",
+     "amount": 40
+    },
+    {
+     "id": "curry_paste",
+     "name": "Паста карри",
+     "unit": "g",
+     "amount": 72
+    },
+    {
+     "id": "spices",
+     "name": "Специи",
+     "unit": "g",
+     "amount": null
+    },
+    {
+     "id": "tomato_paste",
+     "name": "Томатная паста",
+     "unit": "g",
+     "amount": 72
+    }
+   ]
+  }
+ ]
+}
