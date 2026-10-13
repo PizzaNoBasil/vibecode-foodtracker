@@ -21,6 +21,7 @@ from planner.data.profiles import (
     SLOT_TITLES,
     WEEKDAYS_SHORT,
 )
+from planner.data.photos import PHOTOS
 from planner.data.recipes import RECIPES
 from planner.model import ZERO, Line, Macros, Recipe
 from planner.portions import batch_lines, portion_grams, portion_lines, portion_macros
@@ -87,6 +88,22 @@ def recipe_json(recipe: Recipe) -> dict:
         "storage": recipe.storage,
         "notes": list(recipe.notes),
         "portions": portions,
+        "photo": photo_json(recipe.id),
+    }
+
+
+def photo_json(recipe_id: str) -> dict | None:
+    photo = PHOTOS.get(recipe_id)
+    if photo is None:
+        return None
+    return {
+        "src": f"recipes/{recipe_id}.webp",
+        "thumb": f"recipes/{recipe_id}-s.webp",
+        "title": photo.title,
+        "creator": photo.creator,
+        "license": photo.license,
+        "licenseUrl": photo.license_url,
+        "page": photo.page,
     }
 
 

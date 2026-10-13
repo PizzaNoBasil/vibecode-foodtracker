@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { formatAmount } from '../../logic/format'
 import { plan, type Recipe, type Slot } from '../../plan'
 import { useProfile, useSettings, useStored } from '../../state/storage'
+import { asset, Thumb } from '../components/media'
 import { Card, displayName, MacroLine, Segmented } from '../components/ui'
 import { href } from '../router'
 
@@ -27,13 +28,11 @@ export function RecipesScreen() {
         {list.map((r, i) => (
           <li key={r.id} className="rise" style={{ ['--i' as string]: Math.min(i, 8) }}>
             <a href={href(`/recipes/${r.id}`)} className="press flex items-center gap-4 rounded-3xl bg-surface p-4">
-              <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-raised font-semibold">
-                {r.code}
-              </span>
+              <Thumb recipe={r} size={64} />
               <span className="min-w-0 flex-1">
                 <span className="block text-[17px] leading-snug font-semibold">{r.title}</span>
                 <span className="block text-[15px] text-muted">
-                  {r.portions.first.macros.kcal} ккал{r.minutes ? ` · ${r.minutes}` : ''}
+                  {r.code} · {r.portions.first.macros.kcal} ккал{r.minutes ? ` · ${r.minutes}` : ''}
                 </span>
               </span>
               <ArrowRight size={20} className="shrink-0 text-muted" />
@@ -79,6 +78,28 @@ function RecipeDetail({ recipe }: { recipe: Recipe }) {
       >
         <ArrowLeft size={18} weight="bold" /> Назад
       </button>
+
+      {recipe.photo && (
+        <figure className="mb-5">
+          <img
+            src={asset(recipe.photo.src)}
+            alt={recipe.title}
+            width={960}
+            height={720}
+            className="aspect-[4/3] w-full rounded-3xl bg-raised object-cover"
+          />
+          <figcaption className="mt-2 text-[13px] text-muted">
+            Фото для примера:{' '}
+            <a href={recipe.photo.page} target="_blank" rel="noreferrer" className="underline">
+              {recipe.photo.creator}
+            </a>
+            ,{' '}
+            <a href={recipe.photo.licenseUrl} target="_blank" rel="noreferrer" className="underline">
+              {recipe.photo.license}
+            </a>
+          </figcaption>
+        </figure>
+      )}
 
       <header className="mb-5">
         <p className="text-muted">

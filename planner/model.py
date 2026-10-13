@@ -91,6 +91,7 @@ class Prep:
     key: str = ""
     qty: float = 0
     forms: tuple[str, str, str] | None = None
+    icon: str = ""  # значок в интерфейсе: egg, pot, oven, pan, timer, cart
 
 
 @dataclass(frozen=True)
@@ -148,12 +149,25 @@ class WeekdayRule:
     weekday: int  # 0 = Пн
     text: str
     link: str = ""
+    icon: str = ""
 
 
 @dataclass(frozen=True)
 class Reminder:
     text: str
     link: str = ""
+    icon: str = ""
+
+
+@dataclass(frozen=True)
+class Photo:
+    """Фото блюда из открытой коллекции и данные для подписи автора."""
+
+    title: str
+    creator: str
+    license: str
+    license_url: str
+    page: str
 
 
 @dataclass

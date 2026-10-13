@@ -36,11 +36,23 @@ export interface Recipe {
   storage: string
   notes: string[]
   portions: { first: Portion; second?: Portion; batch?: Portion }
+  photo: Photo | null
+}
+
+export interface Photo {
+  src: string
+  thumb: string
+  title: string
+  creator: string
+  license: string
+  licenseUrl: string
+  page: string
 }
 
 export interface Reminder {
   text: string
   link: string
+  icon: string
 }
 
 export interface CycleDay {

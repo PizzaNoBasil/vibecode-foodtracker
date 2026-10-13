@@ -5,6 +5,7 @@ import { formatAmount, shoppingText } from '../../logic/format'
 import { dayAt, defaultShoppingMonday } from '../../logic/schedule'
 import { plan, type ShoppingItem } from '../../plan'
 import { clearStored, listKeys, useSettings, useStored } from '../../state/storage'
+import { GROUP_ICONS } from '../components/media'
 import { Segmented } from '../components/ui'
 import { useToday } from '../useToday'
 
@@ -87,7 +88,7 @@ export function ShoppingScreen() {
       <div className="mt-4 space-y-3">
         {list.groups.map((g, gi) => (
           <section key={g.id} className="rise rounded-3xl bg-surface p-2" style={{ ['--i' as string]: gi }}>
-            <h2 className="px-3 pt-2 pb-1 text-xl font-semibold">{g.title}</h2>
+            <GroupTitle id={g.id} title={g.title} />
             <ul>
               {g.items.map((item) => (
                 <ItemRow key={item.id} item={item} checked={checked.has(item.id)} onToggle={toggle} />
@@ -130,6 +131,16 @@ export function ShoppingScreen() {
         )}
       </div>
     </div>
+  )
+}
+
+function GroupTitle({ id, title }: { id: string; title: string }) {
+  const I = GROUP_ICONS[id]
+  return (
+    <h2 className="flex items-center gap-2.5 px-3 pt-2 pb-1 text-xl font-semibold">
+      {I && <I size={24} weight="duotone" className="text-accent" />}
+      {title}
+    </h2>
   )
 }
 

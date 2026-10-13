@@ -3,6 +3,7 @@ import { addDays } from '../../logic/dates'
 import { dayAt, scoopsLeft } from '../../logic/schedule'
 import { plan, type ProfileId, type Reminder } from '../../plan'
 import { useProfile, useSettings } from '../../state/storage'
+import { asset, ReminderIcon, Thumb } from '../components/media'
 import { Bar, Card, Chip, MacroLine } from '../components/ui'
 import { href } from '../router'
 import { useToday } from '../useToday'
@@ -66,24 +67,37 @@ function Meals({ profile, date, start }: { profile: ProfileId; date: string; sta
           if (!id) return null
           const r = plan.recipes[id]
           const portion = r.portions[profile] ?? r.portions.first
+          // Ужин — главный приём, у него фото во всю ширину; остальные с превью слева.
+          const hero = slot === 'dinner' && r.photo
           return (
             <a
               key={slot}
               href={href(`/recipes/${id}`)}
               style={{ ['--i' as string]: i }}
-              className="press rise flex items-center gap-4 rounded-3xl bg-surface p-5"
+              className="press rise block overflow-hidden rounded-3xl bg-surface"
             >
-              <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2 text-[15px] text-muted">
-                  {plan.slotTitles[slot]}
-                  {slot === 'dinner' && <Chip mode={day.dinnerMode} />}
+              {hero && (
+                <img
+                  src={asset(r.photo!.src)}
+                  alt={r.title}
+                  className="aspect-[16/9] w-full bg-raised object-cover"
+                  decoding="async"
+                />
+              )}
+              <div className="flex items-center gap-4 p-4">
+                {!hero && <Thumb recipe={r} size={72} />}
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2 text-[15px] text-muted">
+                    {plan.slotTitles[slot]}
+                    {slot === 'dinner' && <Chip mode={day.dinnerMode} />}
+                  </div>
+                  <div className="mt-0.5 text-[19px] leading-snug font-semibold">{r.title}</div>
+                  <div className="mt-1 text-[15px]">
+                    <MacroLine m={portion.macros} grams={portion.grams} />
+                  </div>
                 </div>
-                <div className="mt-0.5 text-[19px] leading-snug font-semibold">{r.title}</div>
-                <div className="mt-1 text-[15px]">
-                  <MacroLine m={portion.macros} grams={portion.grams} />
-                </div>
+                <ArrowRight size={20} className="shrink-0 text-muted" />
               </div>
-              <ArrowRight size={20} className="shrink-0 text-muted" />
             </a>
           )
         })}
@@ -180,13 +194,17 @@ function ReminderList({ title, items }: { title: string; items: Reminder[] }) {
               {r.link ? (
                 <a
                   href={href(r.link)}
-                  className="press flex min-h-12 items-center justify-between gap-3 rounded-2xl bg-accent-soft px-4 py-2.5 font-medium"
+                  className="press flex min-h-12 items-center gap-3 rounded-2xl bg-accent-soft px-4 py-2.5 font-medium"
                 >
-                  {r.text}
+                  <ReminderIcon name={r.icon} />
+                  <span className="flex-1">{r.text}</span>
                   <ArrowRight size={18} className="shrink-0" />
                 </a>
               ) : (
-                <div className="rounded-2xl bg-raised px-4 py-2.5 text-[17px]">{r.text}</div>
+                <div className="flex items-center gap-3 rounded-2xl bg-raised px-4 py-2.5 text-[17px]">
+                  <ReminderIcon name={r.icon} />
+                  <span>{r.text}</span>
+                </div>
               )}
             </li>
           ))}

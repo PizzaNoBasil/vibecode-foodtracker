@@ -4,6 +4,7 @@ import { addDays, formatRange, mondayOf } from '../../logic/dates'
 import { weekDays, type DayInfo } from '../../logic/schedule'
 import { plan, type ProfileId } from '../../plan'
 import { useProfile, useSettings } from '../../state/storage'
+import { Thumb } from '../components/media'
 import { Chip } from '../components/ui'
 import { href } from '../router'
 import { useToday } from '../useToday'
@@ -104,10 +105,15 @@ function DayCell({
               <li key={slot}>
                 <a
                   href={href(`/recipes/${id}`)}
-                  className="press -mx-2 block rounded-xl px-2 py-1.5 hover:bg-raised"
+                  className="press -mx-2 flex items-center gap-3 rounded-xl px-2 py-1.5 hover:bg-raised md:block"
                 >
-                  <span className="block text-[13px] text-muted">{plan.slotTitles[slot]}</span>
-                  <span className="block leading-snug">{r.title}</span>
+                  <span className="md:hidden">
+                    <Thumb recipe={r} size={44} />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-[13px] text-muted">{plan.slotTitles[slot]}</span>
+                    <span className="block leading-snug">{r.title}</span>
+                  </span>
                 </a>
               </li>
             )

@@ -30,7 +30,7 @@ DEFAULT_CYCLE_START = "2026-10-19"  # понедельник
 # Банка протеина: 40 скупов по 41 г, один скуп на коктейль П1.
 PROTEIN_JAR = {"scoops": 40, "scoop_grams": 41, "recipe": "S1", "warn_below": 6}
 
-WEEKDAY_RULES = (WeekdayRule(5, "Закупка на следующую неделю", link="/shopping"),)
+WEEKDAY_RULES = (WeekdayRule(5, "Закупка на следующую неделю", link="/shopping", icon="cart"),)
 
 SLOT_TITLES = {"breakfast": "Завтрак", "snack": "Перекус", "dinner": "Ужин"}
 WEEKDAYS_SHORT = ("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс")

@@ -47,7 +47,7 @@ export default function App() {
 
   return (
     <div className="min-h-dvh pb-[calc(84px+env(safe-area-inset-bottom))]">
-      <div className={`mx-auto px-4 pt-[max(16px,env(safe-area-inset-top))] ${wide ? 'max-w-6xl' : 'max-w-2xl'}`}>
+      <div className={`mx-auto pt-[max(16px,env(safe-area-inset-top))] pr-[max(16px,env(safe-area-inset-right))] pl-[max(16px,env(safe-area-inset-left))] ${wide ? 'max-w-6xl' : 'max-w-2xl'}`}>
         <div className="mb-6 flex items-center gap-3">
           <div className="max-w-sm flex-1">
             <Segmented<ProfileId>
@@ -77,7 +77,7 @@ export default function App() {
 
       <nav
         aria-label="Разделы"
-        className="fixed inset-x-0 bottom-0 z-10 bg-surface pb-[env(safe-area-inset-bottom)]"
+        className="fixed inset-x-0 bottom-0 z-10 bg-surface px-[env(safe-area-inset-left)] pb-[env(safe-area-inset-bottom)]"
       >
         <ul className="mx-auto flex max-w-2xl">
           {TABS.map(({ path, label, icon: TabIcon }) => {

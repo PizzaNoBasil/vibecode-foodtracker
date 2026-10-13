@@ -47,10 +47,11 @@ def run_days(days: list[Day], i: int, slot: str) -> str:
     return " и ".join(names) if len(names) <= 2 else ", ".join(names)
 
 
-def render(prep: Prep, recipe: Recipe, qty: float, run: str) -> str:
+def render(prep: Prep, recipe: Recipe, qty: float, run: str) -> Reminder:
     n = int(round(qty))
     qty_text = f"{n} {plural(n, prep.forms)}" if prep.forms else str(n)
-    return prep.text.format(qty=qty_text, run=run, title=recipe.title, minutes=recipe.minutes)
+    text = prep.text.format(qty=qty_text, run=run, title=recipe.title, minutes=recipe.minutes)
+    return Reminder(text, icon=prep.icon)
 
 
 def reminders_for(cycle: Cycle, recipes: dict[str, Recipe], index: int) -> list[Reminder]:
@@ -79,7 +80,7 @@ def reminders_for(cycle: Cycle, recipes: dict[str, Recipe], index: int) -> list[
                     continue
                 run = run_days(days, src, slot)
                 if not prep.key:
-                    order.append(Reminder(render(prep, recipe, prep.qty, run)))
+                    order.append(render(prep, recipe, prep.qty, run))
                 elif prep.key in summed:
                     first, first_recipe, qty, first_run = summed[prep.key]
                     summed[prep.key] = (first, first_recipe, qty + prep.qty, first_run)
@@ -87,7 +88,7 @@ def reminders_for(cycle: Cycle, recipes: dict[str, Recipe], index: int) -> list[
                     summed[prep.key] = (prep, recipe, prep.qty, run)
                     order.append(prep.key)
 
-    result = [Reminder(render(*summed[x])) if isinstance(x, str) else x for x in order]
+    result = [render(*summed[x]) if isinstance(x, str) else x for x in order]
     weekday = index % 7
-    result.extend(Reminder(r.text, r.link) for r in WEEKDAY_RULES if r.weekday == weekday)
+    result.extend(Reminder(r.text, r.link, r.icon) for r in WEEKDAY_RULES if r.weekday == weekday)
     return result

@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:py": "python3 -m unittest discover -s planner/tests -t .",
-    "icons": "pwa-assets-generator --preset minimal-2023 public/icon.svg"
+    "icons": "pwa-assets-generator"
   },
   "dependencies": {
     "@fontsource-variable/onest": "^5.2.0",

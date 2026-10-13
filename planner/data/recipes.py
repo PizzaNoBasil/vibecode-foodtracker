@@ -11,7 +11,7 @@ EGG_FORMS = ("яйцо", "яйца", "яиц")
 
 # Общее напоминание для всех ужинов: в день готовки. Без слова «сегодня»,
 # потому что в блоке «Не забыть» оно показывается и под заголовком «Завтра».
-COOK_DAY = Prep("Готовим: {title} на 2 дня, {minutes}", when="cook")
+COOK_DAY = Prep("Готовим: {title} на 2 дня, {minutes}", when="cook", icon="pot")
 
 
 def dinner(*, prep: tuple[Prep, ...] = (), **kwargs) -> Recipe:
@@ -81,7 +81,7 @@ BREAKFASTS = [
             "Творог смешать с зеленью, чесноком и солью, намазать.",
             "Сверху яйца кружками и огурец.",
         ),
-        prep=(Prep("Свари {qty}", offset=-1, key="boil-eggs", qty=2, forms=EGG_FORMS),),
+        prep=(Prep("Свари {qty}", offset=-1, key="boil-eggs", qty=2, forms=EGG_FORMS, icon="egg"),),
     ),
     Recipe(
         id="B4",
@@ -121,7 +121,7 @@ BREAKFASTS = [
             "Утром разогреть, подать с ягодами и мёдом.",
         ),
         storage="Хранить в холодильнике, утром разогреть.",
-        prep=(Prep("Испечь запеканку на {run}", offset=-1, when="first"),),
+        prep=(Prep("Испечь запеканку на {run}", offset=-1, when="first", icon="oven"),),
     ),
 ]
 
@@ -183,7 +183,7 @@ SNACKS = [
             Line("cucumber", 100),
             Line("banana", 1),
         ),
-        prep=(Prep("Свари {qty}", offset=-1, key="boil-eggs", qty=1, forms=EGG_FORMS),),
+        prep=(Prep("Свари {qty}", offset=-1, key="boil-eggs", qty=1, forms=EGG_FORMS, icon="egg"),),
     ),
 ]
 
@@ -231,7 +231,7 @@ DINNERS = [
             "Пасту отварить.",
         ),
         storage="Соус на 2 дня, пасту во второй день варить свежую.",
-        prep=(Prep("Свари свежую пасту к болоньезе", when="leftover"),),
+        prep=(Prep("Свари свежую пасту к болоньезе", when="leftover", icon="pot"),),
     ),
     dinner(
         id="D3",
@@ -377,7 +377,7 @@ DINNERS = [
             "На второй день пожарить, по 3–4 минуты с каждой стороны.",
             "Соус: скир, кетчуп, горчица.",
         ),
-        prep=(Prep("Пожарь вторую половину котлет", when="leftover"),),
+        prep=(Prep("Пожарь вторую половину котлет", when="leftover", icon="pan"),),
     ),
     dinner(
         id="D8",
@@ -403,7 +403,7 @@ DINNERS = [
             "Залить водой и тушить 1,5 часа под крышкой.",
             "Картофель отварить и размять с молоком и маслом.",
         ),
-        prep=(Prep("Гуляш тушится 1,5 часа, начни сразу", when="cook"),),
+        prep=(Prep("Гуляш тушится 1,5 часа, начни сразу", when="cook", icon="timer"),),
     ),
     dinner(
         id="D9",

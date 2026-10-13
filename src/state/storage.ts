@@ -91,13 +91,22 @@ export const DEFAULT_SETTINGS: Settings = {
   proteinOpened: null,
 }
 
+/** Имена из старой версии хранились под другими ключами профилей: переносим их по порядку. */
+function migrateNames(names: Record<string, string> | undefined): Partial<Record<ProfileId, string>> {
+  if (!names) return {}
+  const ids = Object.keys(plan.profiles) as ProfileId[]
+  if (ids.some((id) => id in names)) return names
+  const values = Object.values(names)
+  return Object.fromEntries(ids.map((id, i) => [id, values[i]]).filter(([, v]) => typeof v === 'string'))
+}
+
 export function useSettings(): [Settings, (s: Settings) => void] {
   const [stored, set] = useStored<Partial<Settings>>('settings', DEFAULT_SETTINGS)
   // Старые или неполные сохранения дополняем значениями по умолчанию.
   const settings: Settings = {
     ...DEFAULT_SETTINGS,
     ...stored,
-    names: { ...DEFAULT_SETTINGS.names, ...stored.names },
+    names: { ...DEFAULT_SETTINGS.names, ...migrateNames(stored.names) },
   }
   return [settings, set]
 }
